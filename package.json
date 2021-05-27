@@ -1,0 +1,23 @@
+{
+  "name": "js_data_structure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nina-stoyanova/js_data_structures.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nina-stoyanova/js_data_structures/issues"
+  },
+  "homepage": "https://github.com/nina-stoyanova/js_data_structures#readme"
+}
