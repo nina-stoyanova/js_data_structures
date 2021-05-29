@@ -35,16 +35,28 @@ describe("Array", function () {
         list.add("nina")
         list.add("petya")
         let reverseValue = list.reverse()
-        assert.equal(reverseValue, ["petya", "nina"])
+        let firstElement = reverseValue.shift()
+        assert.equal(firstElement, 'petya')
     })
 
+    it("should remove the value if found", function () { //remove the value if found in the List 
+        list.addMore("nina", "petya")
+        console.log(list)
 
+
+    })
 
 
 
 })
 
 
+// function removeElement(array, elem) {
+//     var index = array.indexOf(elem);
+//     if (index > -1) {
+//         array.splice(index, 1);
+//     }
+// }
 
 
 
@@ -133,5 +145,5 @@ describe("Array", function () {
 
 // // # find(condition) apply condition on all elements and return the first that passes
 // // # sort() - sort the elements
-// // remove(value) - remove the value if found in the List
+
 

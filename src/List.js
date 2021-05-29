@@ -35,8 +35,10 @@ export class List {
         return this._data.reverse()
     }
 
-    remove(value) {
-        return this._data.remove(value)
-    }
+    // remove(...values) {
+    //     return this._data.splice(...values)
+    // }
+
+
 
 }
