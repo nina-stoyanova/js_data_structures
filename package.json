@@ -8,7 +8,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/nina-stoyanova/js_data_structures/issues"
   },
-  "homepage": "https://github.com/nina-stoyanova/js_data_structures#readme"
+  "homepage": "https://github.com/nina-stoyanova/js_data_structures#readme",
+  "dependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^8.4.0"
+  }
 }
