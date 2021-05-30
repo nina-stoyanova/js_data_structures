@@ -41,7 +41,8 @@ describe("Array", function () {
 
     it("should remove the value if found", function () { //remove the value if found in the List 
         list.addMore("nina", "petya")
-        console.log(list)
+        let removedValue = list.remove("nina")
+        assert.equal(removedValue, 0)
 
 
     })
@@ -51,12 +52,6 @@ describe("Array", function () {
 })
 
 
-// function removeElement(array, elem) {
-//     var index = array.indexOf(elem);
-//     if (index > -1) {
-//         array.splice(index, 1);
-//     }
-// }
 
 
 

@@ -35,9 +35,13 @@ export class List {
         return this._data.reverse()
     }
 
-    // remove(...values) {
-    //     return this._data.splice(...values)
-    // }
+    remove(value) {
+        let index = this._data.indexOf(value);
+        if (index > -1) {
+            this._data.splice(index, 1)
+        }
+        return index
+    }
 
 
 
