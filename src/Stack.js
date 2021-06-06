@@ -6,29 +6,25 @@ export class Stack {
 
     //methods
 
-    add(value) {
+    push(value) {
         this._data.push(value);
     }
 
-    getCount() {
-        return this._data.length;
-    }
-
-    returnValue() {
+    pop() {
         return this._data.pop()
     }
 
-    checkValue() {
+    peek() {
         return this._data[this._data.length - 1]
     }
 
-    checkIfEmpty() {
+    isEmpty() {
         if (this._data.length > 0) {
             return false
         }
     }
 
-    createString() {
+    toString() {
         return this._data.toString()
     }
 

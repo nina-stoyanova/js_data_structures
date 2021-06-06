@@ -1,6 +1,6 @@
 import { Stack } from "../src/Stack.js"
 import { assert } from "chai";
-//import { performance } from "perf_hooks";
+
 
 describe("Array", function () {
 
@@ -14,39 +14,38 @@ describe("Array", function () {
     //tests
 
     it("should push value", function () {
-        stack.add("nina")
-        stack.add("petya")
-        let getCount = stack.getCount()
-        assert.equal(getCount, 2)
+        stack.push("nina")
+        stack.push("petya")
+        let topElement = stack.pop()
+        assert.equal(topElement, "petya")
     })
 
     it("should return value", function () {
-        stack.add("nina")
-        stack.add("petya")
-        let returnValue = stack.returnValue()
-        assert.equal(returnValue, "petya")
+        stack.push("nina")
+        stack.push("petya")
+        let returnTopElement = stack.pop()
+        assert.equal(returnTopElement, "petya")
     })
 
     it("should check value", function () {
-        stack.add("nina")
-        stack.add("petya")
-        let checkTopValue = stack.checkValue()
+        stack.push("nina")
+        stack.push("petya")
+        let checkTopValue = stack.peek()
         assert.equal(checkTopValue, "petya")
     })
 
     it("should check if empty", function () {
-        stack.add("nina")
-        stack.add("petya")
-        let checkIfEmpty = stack.checkIfEmpty()
+        stack.push("nina")
+        stack.push("petya")
+        let checkIfEmpty = stack.isEmpty()
         assert.equal(checkIfEmpty, false)
     })
 
     it("should create string", function () {
-        stack.add("nina")
-        stack.add("petya")
-        let string = stack.createString()
-        console.log(string)
-        assert.equal(string, 'nina,petya')
+        stack.push("nina")
+        stack.push("petya")
+        let string = stack.toString()
+        assert.equal(string, "nina,petya")
     })
 
 
