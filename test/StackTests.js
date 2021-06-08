@@ -2,7 +2,7 @@ import { Stack } from "../src/Stack.js"
 import { assert } from "chai";
 
 
-describe("Array", function () {
+describe("Stack", function () {
 
 
     let stack
@@ -21,24 +21,25 @@ describe("Array", function () {
     })
 
     it("should return value", function () {
-        stack.push("nina")
-        stack.push("petya")
-        let returnTopElement = stack.pop()
-        assert.equal(returnTopElement, "petya")
+        // stack.push("nina")
+        // stack.push("petya")
+        let topElement = stack.pop()
+        assert.equal(topElement, "No elements in the stack") //"petya"
     })
 
     it("should check value", function () {
         stack.push("nina")
         stack.push("petya")
-        let checkTopValue = stack.peek()
-        assert.equal(checkTopValue, "petya")
+        let topElement = stack.peek()
+        assert.equal(topElement, "petya")
     })
 
     it("should check if empty", function () {
         stack.push("nina")
         stack.push("petya")
-        let checkIfEmpty = stack.isEmpty()
-        assert.equal(checkIfEmpty, false)
+        let topElement = stack.isEmpty()
+        assert.equal(topElement, false)
+
     })
 
     it("should create string", function () {
