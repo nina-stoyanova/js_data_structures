@@ -7,11 +7,8 @@ describe("Stack", function () {
 
     let stack
     this.beforeEach(() => {
-        stack = new Stack() //new object 
+        stack = new Stack()
     })
-
-
-    //tests
 
     it("should push value", function () {
         stack.push("nina")
@@ -21,10 +18,8 @@ describe("Stack", function () {
     })
 
     it("should return value", function () {
-        // stack.push("nina")
-        // stack.push("petya")
         let topElement = stack.pop()
-        assert.equal(topElement, "No elements in the stack") //"petya"
+        assert.equal(topElement, "No elements in the stack")
     })
 
     it("should check value", function () {
@@ -48,8 +43,4 @@ describe("Stack", function () {
         let string = stack.toString()
         assert.equal(string, "nina,petya")
     })
-
-
-
-
 })

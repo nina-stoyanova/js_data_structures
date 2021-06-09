@@ -1,40 +1,27 @@
 import { Queue } from "../src/Queue.js"
 import { assert } from "chai";
 
-
 describe("Queue", function () {
-
 
     let queue
     this.beforeEach(() => {
-        queue = new Queue() //new object 
+        queue = new Queue()
     })
 
-    //enqueue - adds element in the end of the queue
-
-    it("should enqueue", function () {
+    it("should add element in the end of the queue", function () {
         queue.enqueue("12()")
         let isEmpty = queue.isEmpty()
         assert.equal(isEmpty, false)
     })
 
-    it("should enqueue2", function () {
-        //queue.enqueue()   //if I push nothing or "" it's giving me false
+    it("should check if queue is empthy", function () {
         let isEmpty = queue.isEmpty()
         assert.equal(isEmpty, true)
     })
 
-
-    //dequeue - remove element from the front of the queue
-
-    it("should dequeue", function () {
+    it("should remove element from the front of the queue", function () {
         queue.enqueue("125kj(")
         let topElement = queue.dequeue()
         assert.equal(topElement, "125kj(")
     })
-
-
-
-
-
 })

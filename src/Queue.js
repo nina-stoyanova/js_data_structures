@@ -1,15 +1,12 @@
 export class Queue {
 
-
-    constructor(height, width) {
+    constructor() {
         this._data = [];
     }
-
 
     enqueue(input) {
         return this._data.push(input)
     }
-
 
     dequeue() {
         return this._data.shift()

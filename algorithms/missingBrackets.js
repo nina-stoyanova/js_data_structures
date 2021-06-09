@@ -2,14 +2,11 @@ import { Stack } from "../src/Stack.js"
 
 export const missingBrackets = function (input) {
     let stack = new Stack()
-
     for (let i = 0; i < input.length; i++) {
         let element = input[i];//{
-
         if (element === "(") {
             stack.push(element)
         }
-
         if (element === ")") {
             //check if last element was (
             if (stack.peek() === "(") {
@@ -19,14 +16,9 @@ export const missingBrackets = function (input) {
             }
         }
     }
-
     if (stack.isEmpty() === false) {
         return true
     } else {
         return false
-
     }
-
-
 }
-//problem true
