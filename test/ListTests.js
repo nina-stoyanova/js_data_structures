@@ -2,7 +2,7 @@
 // import { assert } from "chai";
 // import { performance } from "perf_hooks";
 
-// describe("Array", function () {
+// describe("List", function () {
 
 //     it("should equal", function () {
 //         assert.equal(1, 1);          // assert.equal(actual, expected)
