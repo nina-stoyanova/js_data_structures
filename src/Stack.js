@@ -4,8 +4,6 @@ export class Stack {
         this._data = [];
     }
 
-    //methods
-
     push(value) {
         this._data.push(value);
     }
@@ -34,8 +32,6 @@ export class Stack {
     toString() {
         return this._data.toString()
     }
-
-
 }
 
 
