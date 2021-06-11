@@ -49,23 +49,23 @@
 
 
 
-//     //linear search approach algorithm
-//     find(searchedPropertyName, searchedPropertyValue) {
-//         for (let element of this._data) {
-//             if (Number.isInteger(searchedPropertyName)) {//10
-//                 if (element === searchedPropertyName) {
-//                     return element
-//                 }
-//             } else {
-//                 if (element[searchedPropertyName] === searchedPropertyValue) {
-//                     return element
-//                 }
-//             }
+    // //linear search approach algorithm
+    // find(searchedPropertyName, searchedPropertyValue) {
+    //     for (let element of this._data) {
+    //         if (Number.isInteger(searchedPropertyName)) {//10
+    //             if (element === searchedPropertyName) {
+    //                 return element
+    //             }
+    //         } else {
+    //             if (element[searchedPropertyName] === searchedPropertyValue) {
+    //                 return element
+    //             }
+    //         }
 
-//         }
-//         // return undefined
-//         // element.age === element["age"]
-//     }
+    //     }
+    //     // return undefined
+    //     // element.age === element["age"]
+    // }
 
 
 
